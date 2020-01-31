@@ -1,2 +1,2 @@
-# book-css
-Bootstrap theme for online books.
+# neumorphic
+Bootstrap-based theme for online neumorphic designs.

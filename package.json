@@ -8,21 +8,21 @@
     "css": "npm-run-all css-compile css-prefix css-minify",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
-    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/book-css.min.css dist/css/book-css.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/book-css-grid.min.css dist/css/book-css-grid.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/book-css-utilities.min.css dist/css/book-css-utilities.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/book-css-reboot.min.css dist/css/book-css-reboot.css",
+    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/neumorphic.min.css dist/css/neumorphic.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/neumorphic-grid.min.css dist/css/neumorphic-grid.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/neumorphic-utilities.min.css dist/css/neumorphic-utilities.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/neumorphic-reboot.min.css dist/css/neumorphic-reboot.css",
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-lint css-compile css-prefix\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fantasyui-com/book-css.git"
+    "url": "git+https://github.com/fantasyui-com/neumorphic.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fantasyui-com/book-css/issues"
+    "url": "https://github.com/fantasyui-com/neumorphic/issues"
   },
-  "homepage": "https://github.com/fantasyui-com/book-css#readme",
+  "homepage": "https://github.com/fantasyui-com/neumorphic#readme",
   "dependencies": {
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.13.1",
